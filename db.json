@@ -1,0 +1,125 @@
+{
+  "items": [ 
+ {
+    "id": 1,
+    "type": "react",
+    "fullImg": "../assets/codeploy.png",
+    "ipadImg": "../assets/codeploy_ipad.png",
+    "iphoneImg": "../assets/codeploy_iphone.png",
+    "title": "Codeploy",
+    "descrip": "MERN stack app completed with remote team. Keep track of web development jobs you've applied to and utilize job-ready resources added and reviewed by fellow web dev job-seekers. Resources rated and, if aided someone in getting the job, given Gold Star status. Log in with GitHub.",
+    "code": "https://github.com/icartusacrimea/codeploy",
+    "site": "https://codeploy.herokuapp.com/"
+  },
+  {
+    "id": 2,
+    "type": "react",
+    "fullImg": "../assets/recipebox.png",
+    "ipadImg": "../assets/recipebox_ipad.png",
+    "iphoneImg": "../assets/recipebox_iphone.png",
+    "title": "Recipe Box",
+    "descrip": "React app using local storage.",
+    "code": "https://github.com/icartusacrimea/recipebox",
+    "site": "https://icartusacrimea.github.io/recipebox"
+  },
+  {
+    "id": 3,
+    "type": "react",
+    "fullImg": "../assets/flickr.png",
+    "ipadImg": "../assets/flickr_ipad.png",
+    "iphoneImg": "../assets/flickr_iphone.png",
+    "title": "Flickr Search",
+    "descrip": "React/Redux app with Flickr API",
+    "code": "https://github.com/icartusacrimea/react_test_alzcarelabs",
+    "site": "https://icartusflickrsearch.herokuapp.com/"
+  },
+  {
+    "id": 4,
+    "type": "react",
+    "fullImg": "../assets/gol.png",
+    "ipadImg": "../assets/gol_ipad.png",
+    "iphoneImg": "../assets/gol_iphone.png",
+    "title": "Game of Life",
+    "descrip": "John Conway's classic Game of Life in React",
+    "code": "https://github.com/icartusacrimea/gameoflife",
+    "site": "https://icartusacrimea.github.io/gameoflife/"
+  },
+  {
+    "id": 5,
+    "type": "react",
+    "fullImg": "../assets/leaderboard.png",
+    "ipadImg": "../assets/leaderboard_ipad.png",
+    "iphoneImg": "../assets/leaderboard_iphone.png",
+    "title": "Camper Leaderboard",
+    "descrip": "Sort (fCC) campers with most brownie points by past 30 days or all time. One of my first projects in React.",
+    "code": "https://github.com/icartusacrimea/camper_leaderboard",
+    "site": "http://codepen.io/LaerTrech/full/RpaZvv"
+  },
+  {
+    "id": 6,
+    "type": "bot",
+    "fullImg": "../assets/Matchbot.jpg",
+    "ipadImg": "../assets/matchbot_ipad.jpg",
+    "iphoneImg": "../assets/matchbot_iphone.jpg",
+    "title": "MatchBot",
+    "descrip": "uses IBM Watson personality-insights to collect data from your messages within a Slack team to create a personality profiles and offer best compatibility matches for team collaboration",
+    "code": "https://github.com/icartusacrimea/matchbot",
+    "site": "https://slackmatchbot.herokuapp.com/"
+  },
+  {
+    "id": 7,
+    "type": "bot",
+    "fullImg": "../assets/slackportal.png",
+    "ipadImg": "../assets/slackportal_ipad.png",
+    "iphoneImg": "../assets/slackportal_iphone.png",
+    "title": "Portal",
+    "descrip": "A chat service and bot for Slack",
+    "code": "https://github.com/icartusacrimea/SlackPortal",
+    "site": "slackteamportal.herokuapp.com"
+  },
+  {
+    "id": 8,
+    "type": "frontend",
+    "fullImg": "../assets/Pomodoro.jpg",
+    "ipadImg": "../assets/pomo_ipad.png",
+    "iphoneImg": "../assets/pomo_iphone.png",
+    "title": "Pomodoro Clock",
+    "descrip": "Work and break session timer in JavaScript/jQuery",
+    "code": "https://codepen.io/LaerTrech/pen/xEawZR",
+    "site": "https://codepen.io/LaerTrech/full/xEawZR"
+  },
+  {
+    "id": 9,
+    "type": "frontend",
+    "fullImg": "../assets/Simon.jpg",
+    "ipadImg": "../assets/simon_ipad.png",
+    "iphoneImg": "../assets/simon_iphone.png",
+    "title": "Simon",
+    "descrip": "The classic '80s memory game in JavaScript/jQuery",
+    "code": "https://codepen.io/LaerTrech/pen/GNGaJy",
+    "site": "https://codepen.io/LaerTrech/full/GNGaJy"
+  },
+  {
+    "id": 10,
+    "type": "frontend",
+    "fullImg": "../assets/tictactoe.png",
+    "ipadImg": "../assets/tictactoe_ipad.png",
+    "iphoneImg": "../assets/tictactoe_iphone.png",
+    "title": "Tic-Tac-Toe",
+    "descrip": "JavaScript game with AI",
+    "code": "https://codepen.io/LaerTrech/pen/XNNxEE",
+    "site": "https://codepen.io/LaerTrech/full/XNNxEE"
+  },
+  {
+    "id": 11,
+    "type": "frontend",
+    "fullImg": "../assets/Calc.jpg",
+    "ipadImg": "../assets/calc_ipad.png",
+    "iphoneImg": "../assets/calc_iphone.png",
+    "title": "Calculator",
+    "descrip": "in JavaScript",
+    "code": "https://codepen.io/LaerTrech/pen/gwZAVQ",
+    "site": "https://codepen.io/LaerTrech/full/gwZAVQ"
+  }
+  ]
+}

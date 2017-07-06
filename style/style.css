@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  height: 100vh !important;
+  color: white;
+  font-family: 'Loved by the King', cursive;
+  background: url("../assets/other.jpg") center bottom fixed no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+}
+
+#heading {
+  font-family: 'Loved by the King', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  height: 100vh !important;
+  padding-bottom: 30px;
+}
+.navbar-inverse {
+  font-family: 'Loved by the King', cursive;
+  background: transparent;
+  border: none;
+  line-height: 16px;
+  padding: 13px;
+  font-size: 1.3em;
+  cursor: pointer;
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+.navbar-right {
+  float: right;
+  margin-right: 10px;
+}
+button.navbar-brand:hover {
+  color: #00ECFF;
+  text-decoration: none;
+  background: transparent;
+}
+button.navbar-right:hover {
+  color: #00ECFF;
+  text-decoration: none;
+  background: transparent;
+}
+button.navbar-brand:active {
+  color: #00ECFF;
+  text-decoration: none;
+  background: transparent;
+}
+button.navbar-right:active {
+  color: #00ECFF;
+  text-decoration: none;
+  background: transparent;
+}
+button.navbar-brand, button.navbar-right {
+  padding-left: 35px;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  padding-top: 13px;
+  color: white;
+  background: transparent;
+}
+
+/* Heading */
+#icart {
+  font-size: 3.2em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 55px;
+}
+#label {
+  margin: 0;
+  padding: 0;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+}
+ul.social {
+  list-style: none;
+  padding: 10px;
+  margin-top: 50px;
+}
+.social li {
+  display: inline;
+  color: white;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+#codepen {
+  font-size: .7em;
+  padding: 8px;
+  transition: .3s;
+  color: white;
+}
+#linked-in {
+  font-size: 1.5em;
+  padding: 8px;
+  transition: .3s;
+  color: white;
+}
+#free-code-camp, #github {
+  font-size: 1.5em;
+  padding: 8px;
+  transition: .3s;
+  color: white;
+}
+#codepen:hover, #free-code-camp:hover, #github:hover, #linked-in:hover {
+  color: #00ECFF;
+  transition: .3s;
+}
+.col-sm-6 {
+  color: white;
+  display: inline-block;
+}
+span#mainIconLabel {
+  font-size: .3em;
+  padding: 0;
+  margin: 0;
+}
+.mainIcon:hover span {
+  color: #00ECFF;
+  transition: .4s;
+  text-decoration: none;
+}
+#projects:hover, #user:hover {
+  color: #00ECFF;
+  transition: .4s;
+  text-decoration: none;
+}
+#projects, #user {
+  width: auto;
+  text-align: center;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 25px;
+  cursor: pointer;
+  background: transparent;
+  display: inline-block;
+  font-size: 3.5em;
+}
+#user {
+  float: right;
+  padding-right: 10px;
+  padding: 0;
+}
+#projects {
+  float: left;
+  padding-left: 10px;
+  padding: 0;
+}
+section {
+  margin: 0;
+  padding: 0;
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+
+/* Portfolio */
+.projects-list-dropdown {
+  margin-top: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: 'Loved by the King', cursive;
+  border: none;
+  color: white;
+  padding: 6px;
+  font-size: 1.5em;
+}
+.select-projects{
+  font-size: 1.5em;
+}
+button.btn {
+  background-color: rgba(0, 142, 118, .6);
+  margin: 9px;
+  font-size: 1em;
+  padding: 5px;
+}
+button.btn:hover{
+  background-color: rgba(255, 105, 106, .6);
+}
+.projects-list {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+}
+.portfolio-item{
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.iphonePort{
+  width: 67px;
+  height: 120px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 5px;
+}
+.fullPort{
+  width: 320px;
+  height: 190px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 5px;
+}
+.ipadPort{
+  width: 100px;
+  height: 133px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 5px;
+}
+.work {
+  margin-top: 10px;
+}
+#work {
+  width: 80%;
+  font-family: 'Loved by the King', cursive;
+  text-decoration: none;
+}
+a#work {
+  color: #FFB2A1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 1.4em;
+}
+a#work:hover {
+  color: #00ECFF;
+  transition: .3s;
+}
+p#work {
+  font-size: 1.6em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 5px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+h4#work {
+  font-family: 'Loved by the King', cursive;
+  font-size: 2.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+/* About */
+#about {
+  text-align: center;
+  color: white;
+  font-family: 'Loved by the King', cursive;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.9);
+}
+.col-md-6 {
+  text-align: left;
+  font-size: 1.6em;
+}
+#portrait {
+  height: auto;
+  width: 380px;
+  opacity: .8;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border: 2px solid #00ECFF;
+  padding: 4px;
+}
+.email {
+  font-size: 1.1em;
+  transition: .3s;
+  color: white;
+}
+.email:hover {
+  color: #00ECFF;
+  transition: .3s;
+}
+.bottom {
+  text-align: center;
+  padding: 8px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #15aeb7;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #57d9f0;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #373337;
+  border: 0px none #ffffff;
+  border-radius: 21px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Media Queries */
+@media (max-device-width: 800px) {
+  body, html {
+    overflow: scroll !important;
+  }
+  h2 {
+    padding-top: 50px;
+  }
+  navbar {
+    visibility: hidden;
+  }
+  #portrait {
+    width: 340px;
+  }
+  svg {
+    width: 90%;
+  }
+}
+@media (max-device-width: 600px) {
+  #portrait {
+    width: 280px;
+  }
+  h3 {
+    padding-top: 27px;
+  }
+  #about {
+    text-align: left;
+    padding-left: 10px;
+  }
+}

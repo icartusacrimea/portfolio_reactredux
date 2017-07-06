@@ -1,0 +1,66 @@
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchSvg } from '../actions/index';
+
+class Portfolio extends Component {
+	constructor(props) {
+    super(props);
+
+    this.state= {
+    	show: "default"
+    }
+   this.renderSvg = this.renderSvg.bind(this);
+   this.changeView = this.changeView.bind(this);
+  }
+  renderSvg(svgtype) {
+   if (svgtype.type == this.state.show) {
+  	return (
+        <div className="portfolio-item">
+          <div className="work row">
+            <img className="iphonePort" src={svgtype.iphoneImg} alt={svgtype.title} />
+            <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
+            <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />
+          </div>
+            <h4 id="work">{svgtype.title}</h4>
+            <p id="work">{svgtype.descrip}</p>
+            <div><a id="work" href={svgtype.code}>Code</a></div>
+            <div><a id="work" href={svgtype.site}>Site</a></div>
+        </div>
+      );
+    }
+  }
+  changeView(e) {
+    e.preventDefault();
+
+    this.props.fetchSvg();
+
+    this.setState({ show: e.target.value });
+  }
+	render() {
+    let allProjects = this.props.svg;
+		return (
+			<div>
+			<div className="projects-list-dropdown">
+      <h3 className="select-projects">Select Projects</h3>
+        <button onClick={this.changeView} type="button" value="react" className="btn">React</button>
+        <button onClick={this.changeView} type="button" value="bot" className="btn">Bots</button>
+        <button onClick={this.changeView} type="button" value="frontend" className="btn">fCC Front End</button>
+      </div>
+      <div className="projects-list">
+ 				{allProjects.length > 0 && allProjects[0].map(this.renderSvg)}
+      </div>
+      </div>
+		);
+	}
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchSvg }, dispatch);
+}
+
+function mapStateToProps({ svg }) {
+  return { svg };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Portfolio);
