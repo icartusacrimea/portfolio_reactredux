@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Nav, NavItem } from 'react-bootstrap';
 
 class Navbar extends Component {
 	constructor(props) {
