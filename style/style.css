@@ -17,7 +17,6 @@ body {
   -o-background-size: cover;
   -moz-background-size: cover;
 }
-
 #heading {
   font-family: 'Loved by the King', cursive;
   color: white;
@@ -272,6 +271,9 @@ h4#work {
   font-family: 'Loved by the King', cursive;
   text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.9);
 }
+.center {
+  width: 100%;
+}
 .col-md-6 {
   text-align: left;
   font-size: 1.6em;
@@ -281,8 +283,11 @@ h4#work {
   width: 380px;
   opacity: .8;
   border-radius: 15px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 25px;
   margin-top: 25px;
+  text-align: center;
   border: 2px solid #00ECFF;
   padding: 4px;
 }
@@ -337,15 +342,6 @@ h4#work {
 
 /* Media Queries */
 @media (max-device-width: 800px) {
-  body, html {
-    overflow: scroll !important;
-  }
-  h2 {
-    padding-top: 50px;
-  }
-  navbar {
-    visibility: hidden;
-  }
   #portrait {
     width: 340px;
   }
@@ -354,8 +350,16 @@ h4#work {
   }
 }
 @media (max-device-width: 600px) {
+  #work {
+    width: 95%;
+  }
   #portrait {
     width: 280px;
+    display: block;
+    margin: 0 auto;
+  }
+  .col-md-6 {
+    margin-top: 16px;
   }
   h3 {
     padding-top: 27px;

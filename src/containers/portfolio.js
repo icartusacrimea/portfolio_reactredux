@@ -14,13 +14,14 @@ class Portfolio extends Component {
    this.changeView = this.changeView.bind(this);
   }
   renderSvg(svgtype) {
+  let testExp = new RegExp('Android|webOS|iPhone|iPad|' + 'BlackBerry|Windows Phone|' + 'Opera Mini|IEMobile|Mobile', 'i');
    if (svgtype.type == this.state.show) {
   	return (
         <div className="portfolio-item">
           <div className="work row">
-            <img className="iphonePort" src={svgtype.iphoneImg} alt={svgtype.title} />
+            {!testExp.test(navigator.userAgent) && <img className="iphonePort" src={svgtype.iphoneImg} alt={svgtype.title} />}
             <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
-            <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />
+            {!testExp.test(navigator.userAgent) && <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />}
           </div>
             <h4 id="work">{svgtype.title}</h4>
             <p id="work">{svgtype.descrip}</p>

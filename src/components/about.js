@@ -5,7 +5,7 @@ class About extends Component {
 		return (
 			<section id="about">
 				  <div className="container">
-				    <div className="row text-center">
+				    <div className="row center">
 				      <img src="assets/bannur.jpg" alt="portrait" id="portrait" />
 				    </div>
 					    <div className="row">
