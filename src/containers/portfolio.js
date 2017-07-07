@@ -18,6 +18,7 @@ class Portfolio extends Component {
    if (svgtype.type == this.state.show) {
   	return (
         <div className="portfolio-item">
+        {this.props.svg.length < 1 && <div className="loading">Loading...</div>}
           <div className="work row">
             {!testExp.test(navigator.userAgent) && <img className="iphonePort" src={svgtype.iphoneImg} alt={svgtype.title} />}
             <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>

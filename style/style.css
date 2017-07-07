@@ -194,6 +194,11 @@ button.btn {
 button.btn:hover{
   background-color: rgba(255, 105, 106, .6);
 }
+.loading {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Loved by the King', cursive;
+}
 .projects-list {
   height: 100%;
   width: 100%;
