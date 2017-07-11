@@ -8,19 +8,23 @@ class Portfolio extends Component {
     super(props);
 
     this.state= {
-    	show: "default"
+    	show: "default",
+      loaded: false
     }
    this.renderSvg = this.renderSvg.bind(this);
    this.changeView = this.changeView.bind(this);
+  }
+  handleImageLoaded() {
+    his.setState({ loaded: true })
   }
   renderSvg(svgtype) {
   let testExp = new RegExp('Android|webOS|iPhone|iPad|' + 'BlackBerry|Windows Phone|' + 'Opera Mini|IEMobile|Mobile', 'i');
    if (svgtype.type == this.state.show) {
   	return (
-        <div className="portfolio-item">
-        {this.props.svg.length < 1 && <div className="loading">Loading...</div>}
+        {!this.state.loaded && <div className="loading">Loading...</div>}
+        {this.state.loaded && <div className="portfolio-item">
           <div className="work row">
-            {!testExp.test(navigator.userAgent) && <img className="iphonePort" src={svgtype.iphoneImg} alt={svgtype.title} />}
+            {!testExp.test(navigator.userAgent) && <img className="iphonePort" onLoad={this.handleImageLoaded.bind(this)} src={svgtype.iphoneImg} alt={svgtype.title} />}
             <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
             {!testExp.test(navigator.userAgent) && <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />}
           </div>
@@ -28,7 +32,7 @@ class Portfolio extends Component {
             <p id="work">{svgtype.descrip}</p>
             <div><a id="work" href={svgtype.code}>Code</a></div>
             <div><a id="work" href={svgtype.site}>Site</a></div>
-        </div>
+        </div>}
       );
     }
   }
