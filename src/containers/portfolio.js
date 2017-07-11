@@ -13,6 +13,7 @@ class Portfolio extends Component {
     }
    this.renderSvg = this.renderSvg.bind(this);
    this.changeView = this.changeView.bind(this);
+   this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
   handleImageLoaded() {
     this.setState({ loaded: true });
@@ -22,9 +23,9 @@ class Portfolio extends Component {
    if (svgtype.type == this.state.show) {
   	return (
         {!this.state.loaded && <div className="loading">Loading...</div>}
-        {this.state.loaded && <div className="portfolio-item">
+        <div className="portfolio-item">
           <div className="work row">
-            {!testExp.test(navigator.userAgent) && <img className="iphonePort" onLoad={this.handleImageLoaded.bind(this)} src={svgtype.iphoneImg} alt={svgtype.title} />}
+            {!testExp.test(navigator.userAgent) && <img className="iphonePort" onLoad={this.handleImageLoaded} src={svgtype.iphoneImg} alt={svgtype.title} />}
             <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
             {!testExp.test(navigator.userAgent) && <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />}
           </div>
@@ -32,7 +33,7 @@ class Portfolio extends Component {
             <p id="work">{svgtype.descrip}</p>
             <div><a id="work" href={svgtype.code}>Code</a></div>
             <div><a id="work" href={svgtype.site}>Site</a></div>
-        </div>}
+        </div>
       );
     }
   }

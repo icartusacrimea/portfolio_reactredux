@@ -198,6 +198,8 @@ button.btn:hover{
   text-align: center;
   font-size: 3em;
   font-family: 'Loved by the King', cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .projects-list {
   height: 100%;
