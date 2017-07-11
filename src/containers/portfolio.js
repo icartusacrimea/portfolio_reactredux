@@ -9,14 +9,14 @@ class Portfolio extends Component {
 
     this.state= {
     	show: "default",
-      loaded: false
+      loaded: ""
     }
    this.renderSvg = this.renderSvg.bind(this);
    this.changeView = this.changeView.bind(this);
    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
   handleImageLoaded() {
-    this.setState({ loaded: true });
+    this.setState({ loaded: 'Loading...' });
   }
   renderSvg(svgtype) {
   let testExp = new RegExp('Android|webOS|iPhone|iPad|' + 'BlackBerry|Windows Phone|' + 'Opera Mini|IEMobile|Mobile', 'i');
@@ -24,7 +24,7 @@ class Portfolio extends Component {
   	return (
         <div className="portfolio-item">
           <div className="work row">
-          {!this.state.loaded && <div className="loading">Loading...</div>}
+          <div className="loading">{this.state.loaded}</div>
             {!testExp.test(navigator.userAgent) && <img className="iphonePort" onLoad={this.handleImageLoaded} src={svgtype.iphoneImg} alt={svgtype.title} />}
             <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
             {!testExp.test(navigator.userAgent) && <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />}
