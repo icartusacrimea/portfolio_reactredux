@@ -15,7 +15,7 @@ class Portfolio extends Component {
    this.changeView = this.changeView.bind(this);
   }
   handleImageLoaded() {
-    his.setState({ loaded: true })
+    this.setState({ loaded: true });
   }
   renderSvg(svgtype) {
   let testExp = new RegExp('Android|webOS|iPhone|iPad|' + 'BlackBerry|Windows Phone|' + 'Opera Mini|IEMobile|Mobile', 'i');
