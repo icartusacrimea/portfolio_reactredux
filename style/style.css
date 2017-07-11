@@ -197,6 +197,8 @@ button.btn:hover{
 .loading {
   text-align: center;
   font-family: 'Loved by the King', cursive;
+  color: white;
+  font-size: 2em;
 }
 .projects-list {
   height: 100%;

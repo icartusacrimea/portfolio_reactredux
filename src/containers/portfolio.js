@@ -16,7 +16,8 @@ class Portfolio extends Component {
    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
   handleImageLoaded() {
-    this.setState({ loaded: 'Loading...' });
+    console.log('loaded');
+    this.setState({ loaded: '' });
   }
   renderSvg(svgtype) {
   let testExp = new RegExp('Android|webOS|iPhone|iPad|' + 'BlackBerry|Windows Phone|' + 'Opera Mini|IEMobile|Mobile', 'i');
@@ -24,9 +25,8 @@ class Portfolio extends Component {
   	return (
         <div className="portfolio-item">
           <div className="work row">
-          <div className="loading">{this.state.loaded}</div>
-            {!testExp.test(navigator.userAgent) && <img className="iphonePort" onLoad={this.handleImageLoaded} src={svgtype.iphoneImg} alt={svgtype.title} />}
-            <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
+            {!testExp.test(navigator.userAgent) && <img className="iphonePort" src={svgtype.iphoneImg} alt={svgtype.title} />}
+            <a href={svgtype.site}><img className="fullPort" onLoad={this.handleImageLoaded} src={svgtype.fullImg} alt={svgtype.title} /></a>
             {!testExp.test(navigator.userAgent) && <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />}
           </div>
             <h4 id="work">{svgtype.title}</h4>
@@ -42,7 +42,7 @@ class Portfolio extends Component {
 
     this.props.fetchSvg();
 
-    this.setState({ show: e.target.value });
+    this.setState({ show: e.target.value, loaded: 'Loading...' });
   }
 	render() {
     let allProjects = this.props.svg;
@@ -55,6 +55,7 @@ class Portfolio extends Component {
         <button onClick={this.changeView} type="button" value="frontend" className="btn">fCC Front End</button>
       </div>
       <div className="projects-list">
+      <div className="loading">{this.state.loaded}</div>
  				{allProjects.length > 0 && allProjects[0].map(this.renderSvg)}
       </div>
       </div>
