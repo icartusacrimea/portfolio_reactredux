@@ -24,6 +24,7 @@ class Portfolio extends Component {
   	return (
         <div className="portfolio-item">
           <div className="work row">
+          {!this.state.loaded && <div className="loading">Loading...</div>}
             {!testExp.test(navigator.userAgent) && <img className="iphonePort" onLoad={this.handleImageLoaded} src={svgtype.iphoneImg} alt={svgtype.title} />}
             <a href={svgtype.site}><img className="fullPort" src={svgtype.fullImg} alt={svgtype.title} /></a>
             {!testExp.test(navigator.userAgent) && <img className="ipadPort" src={svgtype.ipadImg} alt={svgtype.title} />}
@@ -53,10 +54,9 @@ class Portfolio extends Component {
         <button onClick={this.changeView} type="button" value="bot" className="btn">Bots</button>
         <button onClick={this.changeView} type="button" value="frontend" className="btn">fCC Front End</button>
       </div>
-      {!this.state.loaded && <div className="loading">Loading...</div>}
-      {this.state.loaded && <div className="projects-list">
+      <div className="projects-list">
  				{allProjects.length > 0 && allProjects[0].map(this.renderSvg)}
-      </div>}
+      </div>
       </div>
 		);
 	}
