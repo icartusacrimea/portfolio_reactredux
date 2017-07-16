@@ -55,7 +55,7 @@ class Portfolio extends Component {
         <button onClick={this.changeView} type="button" value="frontend" className="btn">fCC Front End</button>
       </div>
       <div className="projects-list">
-      <div className="loading">{this.state.loaded}</div>
+      <div className="loading loading-animate">{this.state.loaded}</div>
  				{allProjects.length > 0 && allProjects[0].map(this.renderSvg)}
       </div>
       </div>

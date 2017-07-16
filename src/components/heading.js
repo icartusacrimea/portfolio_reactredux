@@ -38,7 +38,7 @@ class Heading extends Component {
 			          <a id="github" href="https://github.com/icartusacrimea" target="_blank"><i className="fa fa-github"></i></a>
 			        </li>
 			        <li>
-			          <a href="http://www.freecodecamp.com/icartusacrimea" target="_blank" id="free-code-camp"><i className="fa fa-fire"></i></a>
+			          <a href="http://www.freecodecamp.com/icartusacrimea" target="_blank" id="free-code-camp"><i className="fa fa-free-code-camp"></i></a>
 			        </li>
 			      </ul>
 			    </div>
